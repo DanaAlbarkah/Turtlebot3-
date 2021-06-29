@@ -66,7 +66,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
-**to run the SLAM Node and see the generated map by the Robot.**
+
 
 **9. Open a new terminal again.**
 
