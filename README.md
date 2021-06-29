@@ -2,7 +2,7 @@
 # These will be the steps to install the tools needed for simulating, mapping, and controlling a turtlebot robot.
 
 
-**1.Make sure you already have a running VM with ubuntu 18.04 OS, and already installed ROS Melodic inside it.**
+**1.Make sure you already have a running VM with ubuntu , and already installed ROS inside it.**
 
 **2.type in the commands down below in the terminal**
 
