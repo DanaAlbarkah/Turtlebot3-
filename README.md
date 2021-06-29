@@ -14,7 +14,7 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 $ chmod 755 ./install_ros_kinetic.sh 
 $ bash ./install_ros_kinetic.sh
  ```
-||_Install Dependent ROS 1 Packages ._
+Install Dependent ROS 1 Packages 
 ```
  $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc \
@@ -26,7 +26,7 @@ $ bash ./install_ros_kinetic.sh
   ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
 ```
-||_Install TurtleBot3 Packages ._
+Install TurtleBot3 Packages 
 ```
 $ sudo apt-get install ros-kinetic-dynamixel-sdk
 $ sudo apt-get install ros-kinetic-turtlebot3-msgs
@@ -35,7 +35,7 @@ $ sudo apt-get install ros-kinetic-turtlebot3
 ```
 **3. Enter these codes in the terminal to install Simulation packages**
 
-||_Simulation Install ._
+Simulation Install 
 ```
 $ cd ~/catkin_ws/src/
 $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
@@ -43,9 +43,9 @@ $ cd ~/catkin_ws && catkin_make
 
 ```
  
-**4. Make sure to  make a new terminal after the 3rd step**
+**4. Open a new terminal**
 
-**5. After you are done type in this command in the terminal**
+**5.  type in this command in the terminal**
 ```
 $ source ~/catkin_ws/devel/setup.bash
 ```
@@ -57,28 +57,38 @@ $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 
 ```
+**7. Open a new terminal.**
 
+**8.Type this to launch the SLAM Node.**
 
-**7. Run these commands in the terminal to launch the SLAM Node.**
-
-||_6. 2. 2. "Run SLAM Node"_
+"Run SLAM Node"
 ```
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 **to run the SLAM Node and see the generated map by the Robot.**
 
-**8. Run this command to be able to interact and control the robot**
+**9. Open a new terminal again.**
 
-||_6. 2. 3. Run Teleoperation Node_
+**10. Run this command to be able to interact and control the robot**
+
+ Run Teleoperation Node
 ```
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
-**After you run the 2 codes Now you should be able to control the robot using the keys WASDX to roam around the gazebo simulated map.**
+**now you can start mapping**
 
-**9. After you are done exploring the map with your robot you should save the map using (Ctrl + Alt + T).**
+**To save the map open a new terminal and type the following command**
+```
+$ rosrun map_server map_saver -f ~/map
+```
 
-**You are done.**
+**You will find the map in documents and here is picture of my map**
+![map](https://user-images.githubusercontent.com/85397914/123870280-c9afbc00-d93a-11eb-8d31-b1d1c24edf1c.jpg)
 
-For more information make sure to visit this website from which i took these steps [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/).
+**also a screenshot of what you should see while mapping **
+![SharedScreenshot  map](https://user-images.githubusercontent.com/85397914/123870542-1eebcd80-d93b-11eb-89bd-8e4688974f0a.jpg)
+
+
+For more information go to  [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/).
