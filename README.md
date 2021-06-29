@@ -6,7 +6,7 @@
 
 **2.type in the commands down below in the terminal**
 
-_Install ROS 1 _
+Install ROS 1 
  ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
