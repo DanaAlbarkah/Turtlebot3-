@@ -84,11 +84,12 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 $ rosrun map_server map_saver -f ~/map
 ```
 
-**You will find the map in documents and here is picture of my map**
+**You will find the map in documents and here is picture of my map**  
 ![map](https://user-images.githubusercontent.com/85397914/123870280-c9afbc00-d93a-11eb-8d31-b1d1c24edf1c.jpg)
 
-**also a screenshot of what you should see while mapping **
-![SharedScreenshot  map](https://user-images.githubusercontent.com/85397914/123870542-1eebcd80-d93b-11eb-89bd-8e4688974f0a.jpg)
+**also a screenshot of what you should see while working**
+![SharedScreenshot  map](https://user-images.githubusercontent.com/85397914/123870666-565a7a00-d93b-11eb-99f1-61aa6f554d5b.jpg)
+
 
 
 For more information go to  [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/).
