@@ -51,7 +51,7 @@ $ source ~/catkin_ws/devel/setup.bash
 ```
 **6. Run these commands in the terminal to launch the simulation world.**
 
-||_. Launch Simulation World_
+ Launch Simulation World
 ```
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
